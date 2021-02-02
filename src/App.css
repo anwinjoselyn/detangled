@@ -1,0 +1,51 @@
+@import "~antd/dist/antd.css";
+
+.MainApp {
+  background: #fff;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.MainApp .MainAppHeader {
+  background: #100f0f;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.MainApp .MainAppFooter {
+  background: #d4522f;
+  color: #100f0f;
+  text-align: center;
+}
+
+.TheCards .deleteIcon {
+  opacity: 0.4;
+  font-size: 0.8em;
+  color: red;
+}
+
+.TheCards .editIcon {
+  opacity: 0.8;
+  font-size: 0.8em;
+  color: orange;
+  padding-right: 0.5em;
+}
+
+.TheCards .innerIcon {
+  opacity: 0.6;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+
+.TheCards .innerCard {
+  margin: 0.2em;
+}
+
+.TheCalendar .calendarTag {
+  font-size: 0.8em;
+}
+
+.TheCalendar .calendarTag:hover {
+  word-wrap: break-word !important;
+}
