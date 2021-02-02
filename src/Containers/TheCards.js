@@ -40,11 +40,11 @@ const TheCards = props => {
     });
     setIsModalVisible(true);
   };
-
+  /*
   const handleOk = () => {
     setIsModalVisible(false);
   };
-
+*/
   const handleCancel = () => {
     setEditingId({
       ...editingId,

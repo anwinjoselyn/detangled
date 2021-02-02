@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Calendar, Badge, Card, Row, Col, Tag, Space, Tooltip } from "antd";
+import { Calendar, Card, Row, Col, Tag, Space, Tooltip } from "antd";
 
 //import axios from "axios";
 import moment from "moment";
