@@ -40,10 +40,10 @@ const App = () => {
 
         if (result.data) setTrips(result.data);
         else setTrips(data);
-
-        setTrips(data);
       } catch (e) {
-        message.error("Error retrieving data from server");
+        setTrips(data);
+        message.error("Error retrieving data from server. Using local copy");
+        setLoading(false);
       }
     }
 
