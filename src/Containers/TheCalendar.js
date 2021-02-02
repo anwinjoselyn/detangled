@@ -58,7 +58,7 @@ const TheCalendar = props => {
   }
 
   const onSelect = value => {
-    console.log("value", value);
+    //console.log("value", value);
     props.setSelectedDate({
       ...props.selectedDate,
       value: value,
@@ -68,7 +68,7 @@ const TheCalendar = props => {
   };
 
   const onPanelChange = value => {
-    console.log("value", value);
+    //console.log("value", value);
     props.setSelectedDate({
       ...props.selectedDate,
       value: value,

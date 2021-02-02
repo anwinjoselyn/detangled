@@ -60,7 +60,7 @@ const TheCards = props => {
   const submitDelete = async e => {
     e.preventDefault();
 
-    console.log("Deleing item with ID", editingId.id);
+    //console.log("Deleing item with ID", editingId.id);
 
     try {
       /* when https is available
@@ -111,7 +111,7 @@ const TheCards = props => {
   const submitEdit = async e => {
     e.preventDefault();
 
-    console.log("Updating item ", editingId.data);
+    //console.log("Updating item ", editingId.data);
 
     try {
       /* when https is available

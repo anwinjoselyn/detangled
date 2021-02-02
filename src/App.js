@@ -63,8 +63,8 @@ const App = () => {
   const updateTrips = (data, type) => {
     setLoading(true);
 
-    console.log("data", data);
-    console.log("type", type);
+    //console.log("data", data);
+    //console.log("type", type);
     let tempTrips = trips;
 
     if (type === "update") {
@@ -80,7 +80,7 @@ const App = () => {
     if (type === "delete") {
       tempTrips = tempTrips.filter(t => t.id !== data.id);
     }
-    console.log("tempTrips", tempTrips);
+    //console.log("tempTrips", tempTrips);
     setTrips(tempTrips);
   };
 
