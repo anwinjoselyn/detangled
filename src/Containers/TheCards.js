@@ -17,7 +17,7 @@ import {
 
 import moment from "moment";
 
-import axios from "axios";
+//import axios from "axios";
 
 import "../App.css";
 
@@ -63,6 +63,7 @@ const TheCards = props => {
     console.log("Deleing item with ID", editingId.id);
 
     try {
+      /* when https is available
       const result = await axios({
         method: "DELETE",
         url: `http://detangled.in/develop/62dc75d7-e8cb-4d51-a609-307bc0d00493/events/${editingId.id}`
@@ -87,6 +88,21 @@ const TheCards = props => {
       } else {
         message.error("Sorry, something went wrong while deleting :-(");
       }
+      */
+
+      setEditingId({
+        ...editingId,
+        id: null,
+        data: {},
+        editing: false,
+        deleting: false
+      });
+
+      message.success("Successfully deleted Trip");
+
+      setIsModalVisible(false);
+
+      await props.updateTrips(editingId.data, "delete");
     } catch (error) {
       message.error("Sorry, something went wrong while deleting :-(");
     }
@@ -98,6 +114,7 @@ const TheCards = props => {
     console.log("Updating item ", editingId.data);
 
     try {
+      /* when https is available
       const result = await axios({
         method: "PUT",
         url: `http://detangled.in/develop/62dc75d7-e8cb-4d51-a609-307bc0d00493/events/${editingId.id}`,
@@ -122,6 +139,20 @@ const TheCards = props => {
       } else {
         message.error("Sorry, something went wrong while updating :-(");
       }
+      */
+
+      setEditingId({
+        ...editingId,
+        id: null,
+        data: {},
+        editing: false,
+        deleting: false
+      });
+
+      message.success("Successfully updated Trip");
+
+      setIsModalVisible(false);
+      await props.updateTrips(editingId.data, "update");
     } catch (error) {
       message.error("Sorry, something went wrong while updating :-(");
     }
